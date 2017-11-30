@@ -5,6 +5,8 @@ const hbs = require('hbs'); // accessing the handle bars
 
 const fs = require('fs');
 
+const port = process.env.PORT || 3000;
+
 
 //registering up the partials by passing its folder
 //ALWAYS BE CAREFUL THAT WE SHOULD GIVE EXTENSION IN THE TERMINAL SO BROWSER WILL WORK IF THE hbs FILE HAS BEEN CHANGED
@@ -62,6 +64,6 @@ app.get('/about', (req, res)=>{
 
 
 // assigning the port to the app. It takes two parameters one of them is port number and another is callback function that triggers when the server is up.
-app.listen(3000, ()=>{
-    console.log("Server is up at port 3000");
+app.listen(port, ()=>{
+    console.log(`Server is up at: ${port}`);
 });
