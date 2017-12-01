@@ -28,10 +28,22 @@ header ul li{
     display:block;
     padding:120px 150px;
 }
-#page{
-    padding:50px 100px;
-    font-family: 'Slabo 27px', serif;
-    font-size:27px;
+
+
+#projects-wrapper{
+    padding:50px;
+}
+
+#project{
+    padding:10px;
+}
+
+#blogs-wrapper{
+    padding:50px;
+}
+
+#blog{
+    padding:10px;
 }
 
 #cprt{

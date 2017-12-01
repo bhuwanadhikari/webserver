@@ -59,6 +59,21 @@ app.get('/about', (req, res)=>{
     });  //rendering this about.hbs of above url. and for making it dynamic we pass a object with this res.render as we did.
     
 });
+
+
+//rendering projects page
+app.get('/projects',(req, res)=>{
+   res.render('projects.hbs' , {
+      pageName:'Project Page'
+   });
+});
+
+//rendering blogs page 
+app.get('/blogs', (req, res)=>{
+   res.render('blogs.hbs', {
+       pageName: "Blogs of Bhuwan Adhikari"
+   });
+});
  
 
 
